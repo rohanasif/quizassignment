@@ -8,8 +8,7 @@ import {
 const initialState = {
   options: {},
   questions: [],
-  correct: null,
-  timeTaken: null,
+  results: { correct: 0, timeTaken: 0 },
 };
 
 const optionsReducer = (state = initialState, action) => {
