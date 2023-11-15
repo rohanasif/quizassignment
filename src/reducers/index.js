@@ -1,14 +1,19 @@
-import { ADD_NAME, GET_QUESTIONS, SELECT_OPTIONS } from "../constants";
+import {
+  SET_QUESTIONS,
+  SET_CORRECT,
+  SELECT_OPTIONS,
+  SET_TIME_TAKEN,
+} from "../constants";
 
-const initialOptions = {
-  name: "",
+const initialState = {
   options: {},
+  questions: [],
+  correct: null,
+  timeTaken: null,
 };
 
-const optionsReducer = (state = initialOptions, action) => {
+const optionsReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_NAME:
-      return { ...state, name: action.payload };
     case SELECT_OPTIONS:
       return { ...state, options: action.payload };
     default:
@@ -16,13 +21,24 @@ const optionsReducer = (state = initialOptions, action) => {
   }
 };
 
-const initialQuestions = { questions: [] };
-
-const questionReducer = (state = initialQuestions, action) => {
+const questionReducer = (state = initialState, action) => {
   switch (action.type) {
-    case GET_QUESTIONS:
+    case SET_QUESTIONS:
       return { ...state, questions: action.payload };
+    default:
+      return state;
   }
 };
 
-export { optionsReducer, questionReducer };
+const resultsReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SET_CORRECT:
+      return { ...state, correct: action.payload };
+    case SET_TIME_TAKEN:
+      return { ...state, timeTaken: action.payload };
+    default:
+      return state;
+  }
+};
+
+export { optionsReducer, questionReducer, resultsReducer };

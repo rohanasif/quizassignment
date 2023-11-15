@@ -1,3 +1,4 @@
-export const ADD_NAME = "ADD_NAME";
-export const GET_QUESTIONS = "GET_QUESTIONS";
+export const SET_QUESTIONS = "SET_QUESTIONS";
 export const SELECT_OPTIONS = "SELECT_OPTIONS";
+export const SET_CORRECT = "SET_CORRECT";
+export const SET_TIME_TAKEN = "SET_TIME_TAKEN";

@@ -1,0 +1,11 @@
+{
+  "options": {
+    "category": [],
+    "questionCount": [],
+    "difficulty": [],
+    "questionsType": [],
+    "timePerQuestion": { "time": 0 }
+  },
+  "questions": [],
+  "results": { "correct": 0, "timeTaken": 0 }
+}
