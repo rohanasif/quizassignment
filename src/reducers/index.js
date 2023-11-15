@@ -1,14 +1,30 @@
 import {
-  SET_QUESTIONS,
+  SELECT_QUESTIONS,
+  GET_QUESTION,
   SET_CORRECT,
   SELECT_OPTIONS,
-  SET_TIME_TAKEN,
+  GET_TOTAL_TIME,
+  CHECK_QUESTIONS,
+  TIME_UP,
+  COUNT_DOWN,
+  SET_COUNTER,
+  SET_QUESTION_TIME,
 } from "../constants";
 
 const initialState = {
-  options: {},
+  options: {
+    name: { text: "" },
+    category: [],
+    questionCount: [],
+    difficulty: [],
+    questionsType: [],
+    timePerQuestion: { time: 0 },
+  },
   questions: [],
-  results: { correct: 0, timeTaken: 0 },
+  selectedQuestions: [],
+  currentQuestion: {},
+  results: { correct: 0, incorrect: 0, timeTaken: 0, timeUp: false },
+  counter: { time: 0 },
 };
 
 const optionsReducer = (state = initialState, action) => {
@@ -22,8 +38,33 @@ const optionsReducer = (state = initialState, action) => {
 
 const questionReducer = (state = initialState, action) => {
   switch (action.type) {
-    case SET_QUESTIONS:
-      return { ...state, questions: action.payload };
+    case SELECT_QUESTIONS:
+      return { ...state, selectedQuestions: action.payload };
+    case GET_QUESTION:
+      return { ...state, currentQuestion: action.payload };
+    case CHECK_QUESTIONS:
+      return {
+        ...state,
+        questions: state.selectedQuestions.map((question) =>
+          question.correctChoice === action.payload
+            ? { ...question, correct: true }
+            : { ...question, correct: false }
+        ),
+      };
+    case TIME_UP:
+      return { ...state, results: { ...state.results, timeUp: true } };
+    case SET_COUNTER:
+      return { ...state, counter: { time: state.options.timePerQuestion } };
+    case COUNT_DOWN:
+      return { ...state, counter: state.counter.time - 1 };
+    case SET_QUESTION_TIME:
+      return {
+        ...state,
+        questions: state.selectedQuestions.map((question) => ({
+          ...question,
+          timeTaken: action.payload,
+        })),
+      };
     default:
       return state;
   }
@@ -33,8 +74,17 @@ const resultsReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_CORRECT:
       return { ...state, correct: action.payload };
-    case SET_TIME_TAKEN:
-      return { ...state, timeTaken: action.payload };
+    case GET_TOTAL_TIME:
+      return {
+        ...state,
+        results: {
+          ...state.results,
+          timeTaken: state.selectedQuestions.reduce(
+            (accumulator, currQuestion) => accumulator + currQuestion.timeTaken,
+            0
+          ),
+        },
+      };
     default:
       return state;
   }

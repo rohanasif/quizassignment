@@ -1,11 +1,236 @@
 {
   "options": {
+    "name": { "text": "" },
     "category": [],
     "questionCount": [],
     "difficulty": [],
     "questionsType": [],
     "timePerQuestion": { "time": 0 }
   },
-  "questions": [],
-  "results": { "correct": 0, "timeTaken": 0 }
+  "questions": [
+    {
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "question": "What is the capital of France?",
+      "answers": [
+        { "option": "Berlin", "is_correct": false },
+        { "option": "Madrid", "is_correct": false },
+        { "option": "Paris", "is_correct": true },
+        { "option": "Rome", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Science",
+      "difficulty": "Medium",
+      "question": "Which planet is known as the Red Planet?",
+      "answers": [
+        { "option": "Mars", "is_correct": true },
+        { "option": "Jupiter", "is_correct": false },
+        { "option": "Venus", "is_correct": false },
+        { "option": "Mercury", "is_correct": false }
+      ]
+    },
+    {
+      "category": "History",
+      "difficulty": "Hard",
+      "question": "In which year did World War II end?",
+      "answers": [
+        { "option": "1943", "is_correct": false },
+        { "option": "1945", "is_correct": true },
+        { "option": "1947", "is_correct": false },
+        { "option": "1950", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Geography",
+      "difficulty": "Easy",
+      "question": "Which river is the longest in the world?",
+      "answers": [
+        { "option": "Amazon", "is_correct": false },
+        { "option": "Nile", "is_correct": true },
+        { "option": "Mississippi", "is_correct": false },
+        { "option": "Yangtze", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Sports",
+      "difficulty": "Medium",
+      "question": "Which country won the FIFA World Cup in 2018?",
+      "answers": [
+        { "option": "Germany", "is_correct": false },
+        { "option": "Argentina", "is_correct": false },
+        { "option": "Brazil", "is_correct": false },
+        { "option": "France", "is_correct": true }
+      ]
+    },
+    {
+      "category": "Technology",
+      "difficulty": "Easy",
+      "question": "Who is the co-founder of Microsoft?",
+      "answers": [
+        { "option": "Steve Jobs", "is_correct": false },
+        { "option": "Bill Gates", "is_correct": true },
+        { "option": "Mark Zuckerberg", "is_correct": false },
+        { "option": "Elon Musk", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Movies",
+      "difficulty": "Hard",
+      "question": "Which film won the Academy Award for Best Picture in 2020?",
+      "answers": [
+        { "option": "Joker", "is_correct": false },
+        { "option": "1917", "is_correct": false },
+        { "option": "Parasite", "is_correct": true },
+        { "option": "Once Upon a Time in Hollywood", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Music",
+      "difficulty": "Medium",
+      "question": "Who is known as the 'Queen of Pop'?",
+      "answers": [
+        { "option": "Madonna", "is_correct": true },
+        { "option": "Beyoncé", "is_correct": false },
+        { "option": "Lady Gaga", "is_correct": false },
+        { "option": "Taylor Swift", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Politics",
+      "difficulty": "Easy",
+      "question": "Who is the current President of the United States?",
+      "answers": [
+        { "option": "Donald Trump", "is_correct": false },
+        { "option": "Joe Biden", "is_correct": true },
+        { "option": "Barack Obama", "is_correct": false },
+        { "option": "George W. Bush", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Science",
+      "difficulty": "Hard",
+      "question": "What is the value of π (pi) to two decimal places?",
+      "answers": [
+        { "option": "3.14", "is_correct": true },
+        { "option": "3.16", "is_correct": false },
+        { "option": "3.12", "is_correct": false },
+        { "option": "3.18", "is_correct": false }
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "question": "What is the currency of Japan?",
+      "answers": [
+        { "option": "Won", "is_correct": false },
+        { "option": "Yuan", "is_correct": false },
+        { "option": "Yen", "is_correct": true },
+        { "option": "Ringgit", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Science",
+      "difficulty": "Easy",
+      "question": "What is the chemical symbol for water?",
+      "answers": [
+        { "option": "O2", "is_correct": false },
+        { "option": "H2O", "is_correct": true },
+        { "option": "CO2", "is_correct": false },
+        { "option": "N2", "is_correct": false }
+      ]
+    },
+    {
+      "category": "History",
+      "difficulty": "Medium",
+      "question": "Who was the first President of the United States?",
+      "answers": [
+        { "option": "Thomas Jefferson", "is_correct": false },
+        { "option": "John Adams", "is_correct": false },
+        { "option": "George Washington", "is_correct": true },
+        { "option": "James Madison", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Geography",
+      "difficulty": "Hard",
+      "question": "Which African country is known as the 'Pearl of Africa'?",
+      "answers": [
+        { "option": "Kenya", "is_correct": false },
+        { "option": "Uganda", "is_correct": true },
+        { "option": "Tanzania", "is_correct": false },
+        { "option": "Nigeria", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Sports",
+      "difficulty": "Easy",
+      "question": "In which sport would you perform a slam dunk?",
+      "answers": [
+        { "option": "Tennis", "is_correct": false },
+        { "option": "Basketball", "is_correct": true },
+        { "option": "Soccer", "is_correct": false },
+        { "option": "Golf", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Technology",
+      "difficulty": "Medium",
+      "question": "What does the acronym 'HTML' stand for?",
+      "answers": [
+        { "option": "HyperText Markup Language", "is_correct": true },
+        { "option": "High Tech Machine Learning", "is_correct": false },
+        { "option": "Hypertext Transfer Protocol", "is_correct": false },
+        { "option": "Home Tool and Mold Laboratory", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Movies",
+      "difficulty": "Hard",
+      "question": "Who directed the movie 'Inception'?",
+      "answers": [
+        { "option": "Christopher Nolan", "is_correct": true },
+        { "option": "Quentin Tarantino", "is_correct": false },
+        { "option": "Steven Spielberg", "is_correct": false },
+        { "option": "Martin Scorsese", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Music",
+      "difficulty": "Easy",
+      "question": "Which band is known as the 'Fab Four'?",
+      "answers": [
+        { "option": "The Rolling Stones", "is_correct": false },
+        { "option": "The Beatles", "is_correct": true },
+        { "option": "Led Zeppelin", "is_correct": false },
+        { "option": "Queen", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Politics",
+      "difficulty": "Medium",
+      "question": "Who is the Prime Minister of Canada?",
+      "answers": [
+        { "option": "Justin Trudeau", "is_correct": true },
+        { "option": "Stephen Harper", "is_correct": false },
+        { "option": "Andrew Scheer", "is_correct": false },
+        { "option": "Jean Chrétien", "is_correct": false }
+      ]
+    },
+    {
+      "category": "Science",
+      "difficulty": "Easy",
+      "question": "What is the sum of angles in a triangle?",
+      "answers": [
+        { "option": "90 degrees", "is_correct": false },
+        { "option": "120 degrees", "is_correct": false },
+        { "option": "180 degrees", "is_correct": true },
+        { "option": "360 degrees", "is_correct": false }
+      ]
+    }
+  ],
+  "selectedQuestions": [],
+  "currentQuestion": {},
+  "results": { "correct": 0, "incorrect": 0, "timeTaken": 0, "timeUp": false },
+  "counter": { "time": 0 }
 }
