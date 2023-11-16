@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const selectOptions = (selectedOptions) => async (dispatch) => {
   try {
-    const response = axios.post(`${BASE_URL}/options`, selectedOptions);
+    const response = await axios.post(`${BASE_URL}/options`, selectedOptions);
     dispatch({ type: SELECT_OPTIONS, payload: response.data });
   } catch (e) {
     console.error(e);

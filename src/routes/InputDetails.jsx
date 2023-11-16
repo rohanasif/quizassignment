@@ -1,26 +1,41 @@
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { selectOptions } from "../actions";
+import { useNavigate } from "react-router-dom";
 const InputDetails = () => {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Any Category");
   const [questionCount, setQuestionCount] = useState(0);
   const [difficulty, setDifficulty] = useState("Any Difficulty");
-  const [timePerQuestion, setTimePerQuestion] = useState(0);
-  const [hours, setHours] = useState(Math.floor(timePerQuestion / 3600));
-  const [minutes, setMinutes] = useState(
-    Math.floor((timePerQuestion % 3600) / 60)
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [timePerQuestion, setTimePerQuestion] = useState(
+    hours * 3600 + minutes * 60 + seconds
   );
-  const [seconds, setSeconds] = useState(timePerQuestion % 60);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
+    await dispatch(
+      selectOptions({
+        name,
+        category,
+        questionCount,
+        difficulty,
+        timePerQuestion,
+      })
+    );
+    navigate("/quizapp/questions");
   };
   return (
-    <div>
+    <Container>
       <h1>Enter your name and select from the options below to start!</h1>
       <Form onSubmit={(e) => handleSubmit(e)}>
         <Form.Group controlId="name">
-          <Form.Label htmlFor="name">Name: </Form.Label>
+          <Form.Label>Name: </Form.Label>
           <Form.Control
             type="text"
             value={name}
@@ -29,7 +44,7 @@ const InputDetails = () => {
           />
         </Form.Group>
         <Form.Group controlId="category">
-          <Form.Label htmlFor="category">Select a category: </Form.Label>
+          <Form.Label>Select a category: </Form.Label>
           <Form.Select
             aria-label="Category"
             onChange={(e) => setCategory(e.target.value)}
@@ -108,7 +123,7 @@ const InputDetails = () => {
         </Form.Group>
         <Button type="submit">Play!</Button>
       </Form>
-    </div>
+    </Container>
   );
 };
 export default InputDetails;

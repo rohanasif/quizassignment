@@ -13,12 +13,12 @@ import {
 
 const initialState = {
   options: {
-    name: { text: "" },
-    category: [],
-    questionCount: [],
-    difficulty: [],
-    questionsType: [],
-    timePerQuestion: { time: 0 },
+    name: "",
+    category: "",
+    questionCount: 0,
+    difficulty: "",
+    questionsType: "",
+    timePerQuestion: 0,
   },
   questions: [],
   selectedQuestions: [],
