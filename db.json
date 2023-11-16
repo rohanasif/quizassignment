@@ -4,6 +4,7 @@
     "category": "Any Category",
     "questionCount": "6",
     "difficulty": "Any Difficulty",
+    "type": "",
     "timePerQuestion": 10
   },
   "selectedQuestions": [],

@@ -8,6 +8,7 @@ const InputDetails = () => {
   const [category, setCategory] = useState("Any Category");
   const [questionCount, setQuestionCount] = useState(0);
   const [difficulty, setDifficulty] = useState("Any Difficulty");
+  const [type, setType] = useState("Any Type");
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(10);
@@ -27,6 +28,7 @@ const InputDetails = () => {
         category,
         questionCount,
         difficulty,
+        type,
         timePerQuestion,
       })
     );
@@ -36,6 +38,7 @@ const InputDetails = () => {
         category,
         questionCount,
         difficulty,
+        type,
         timePerQuestion,
       })
     );
@@ -96,7 +99,9 @@ const InputDetails = () => {
           </Form.Select>
         </Form.Group>
         <Form.Group>
-          <Form.Label>How many questions do you want?</Form.Label>
+          <Form.Label>
+            How difficult do you want the questions to be?
+          </Form.Label>
           <Form.Select
             aria-label="difficulty"
             onChange={(e) => setDifficulty(e.target.value)}
@@ -106,6 +111,18 @@ const InputDetails = () => {
             <option value="Easy">Easy</option>
             <option value="Medium">Medium</option>
             <option value="Hard">Hard</option>
+          </Form.Select>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>What type of questions do you want?</Form.Label>
+          <Form.Select
+            aria-label="type"
+            onChange={(e) => setType(e.target.value)}
+            value={type}
+          >
+            <option value="Any Type">Any Type</option>
+            <option value="Multiple Choice">Multiple Choice</option>
+            <option value="True/False">True/False</option>
           </Form.Select>
         </Form.Group>
         <Form.Group>

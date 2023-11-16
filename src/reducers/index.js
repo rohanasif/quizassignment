@@ -17,7 +17,7 @@ const initialState = {
     category: "",
     questionCount: 0,
     difficulty: "",
-    questionsType: "",
+    type: "",
     timePerQuestion: 0,
   },
   questions: [],

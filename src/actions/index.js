@@ -19,13 +19,16 @@ export const selectQuestions = (selectedOptions) => async (dispatch) => {
   try {
     const response = await axios.get(`${BASE_URL}/questions`);
     const allQuestions = response.data;
-    const { category, questionCount, difficulty } = selectedOptions;
+    const { category, questionCount, difficulty, type } = selectedOptions;
     let filteredQuestions = [];
     if (category === "Any Category" && difficulty === "Any Difficulty") {
       filteredQuestions = allQuestions;
     } else {
       filteredQuestions = allQuestions.filter(
-        (q) => q.category === category && q.difficulty === difficulty
+        (q) =>
+          q.category === category &&
+          q.difficulty === difficulty &&
+          q.type === type
       );
     }
     let questionsToShow = [];
