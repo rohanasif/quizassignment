@@ -1,7 +1,7 @@
 import { Form, Button, Container } from "react-bootstrap";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { selectOptions } from "../actions";
+import { useDispatch, useSelector } from "react-redux";
+import { selectOptions, selectQuestions, getQuestion } from "../actions";
 import { useNavigate } from "react-router-dom";
 const InputDetails = () => {
   const [name, setName] = useState("");
@@ -10,15 +10,17 @@ const InputDetails = () => {
   const [difficulty, setDifficulty] = useState("Any Difficulty");
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(10);
   const [timePerQuestion, setTimePerQuestion] = useState(
     hours * 3600 + minutes * 60 + seconds
   );
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const selectedQuestions = useSelector(
+    (state) => state.questions.selectedQuestions
+  );
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     await dispatch(
       selectOptions({
         name,
@@ -28,6 +30,16 @@ const InputDetails = () => {
         timePerQuestion,
       })
     );
+    await dispatch(
+      selectQuestions({
+        name,
+        category,
+        questionCount,
+        difficulty,
+        timePerQuestion,
+      })
+    );
+    await dispatch(getQuestion(selectedQuestions));
     navigate("/quizapp/questions");
   };
   return (
@@ -77,7 +89,6 @@ const InputDetails = () => {
             <option value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
-            <option value="6">6</option>
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
@@ -105,6 +116,7 @@ const InputDetails = () => {
             max={99}
             value={hours}
             onChange={(e) => setHours(e.target.value)}
+            required
           />
           <Form.Control
             type="number"
@@ -112,6 +124,7 @@ const InputDetails = () => {
             max={59}
             value={minutes}
             onChange={(e) => setMinutes(e.target.value)}
+            required
           />
           <Form.Control
             type="number"
@@ -119,6 +132,7 @@ const InputDetails = () => {
             max={59}
             value={seconds}
             onChange={(e) => setSeconds(e.target.value)}
+            required
           />
         </Form.Group>
         <Button type="submit">Play!</Button>

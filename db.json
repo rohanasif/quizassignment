@@ -2,9 +2,42 @@
   "options": {
     "name": "r",
     "category": "Any Category",
-    "questionCount": 0,
+    "questionCount": "6",
     "difficulty": "Any Difficulty",
-    "timePerQuestion": 0
+    "timePerQuestion": 10
+  },
+  "selectedQuestions": [],
+  "currentQuestion": {
+    "category": "Movies",
+    "difficulty": "Hard",
+    "question": "Which film won the Academy Award for Best Picture in 2020?",
+    "answers": [
+      {
+        "option": "Joker",
+        "is_correct": false
+      },
+      {
+        "option": "1917",
+        "is_correct": false
+      },
+      {
+        "option": "Parasite",
+        "is_correct": true
+      },
+      {
+        "option": "Once Upon a Time in Hollywood",
+        "is_correct": false
+      }
+    ]
+  },
+  "results": {
+    "correct": 0,
+    "incorrect": 0,
+    "timeTaken": 0,
+    "timeUp": false
+  },
+  "counter": {
+    "time": 0
   },
   "questions": [
     {
@@ -28,8 +61,7 @@
           "option": "Rome",
           "is_correct": false
         }
-      ],
-      "id": 1
+      ]
     },
     {
       "category": "Science",
@@ -52,8 +84,7 @@
           "option": "Mercury",
           "is_correct": false
         }
-      ],
-      "id": 2
+      ]
     },
     {
       "category": "History",
@@ -76,8 +107,7 @@
           "option": "1950",
           "is_correct": false
         }
-      ],
-      "id": 3
+      ]
     },
     {
       "category": "Geography",
@@ -100,8 +130,7 @@
           "option": "Yangtze",
           "is_correct": false
         }
-      ],
-      "id": 4
+      ]
     },
     {
       "category": "Sports",
@@ -124,8 +153,7 @@
           "option": "France",
           "is_correct": true
         }
-      ],
-      "id": 5
+      ]
     },
     {
       "category": "Technology",
@@ -148,8 +176,7 @@
           "option": "Elon Musk",
           "is_correct": false
         }
-      ],
-      "id": 6
+      ]
     },
     {
       "category": "Movies",
@@ -172,8 +199,7 @@
           "option": "Once Upon a Time in Hollywood",
           "is_correct": false
         }
-      ],
-      "id": 7
+      ]
     },
     {
       "category": "Music",
@@ -196,8 +222,7 @@
           "option": "Taylor Swift",
           "is_correct": false
         }
-      ],
-      "id": 8
+      ]
     },
     {
       "category": "Politics",
@@ -220,8 +245,7 @@
           "option": "George W. Bush",
           "is_correct": false
         }
-      ],
-      "id": 9
+      ]
     },
     {
       "category": "Science",
@@ -244,8 +268,7 @@
           "option": "3.18",
           "is_correct": false
         }
-      ],
-      "id": 10
+      ]
     },
     {
       "category": "General Knowledge",
@@ -268,8 +291,7 @@
           "option": "Ringgit",
           "is_correct": false
         }
-      ],
-      "id": 11
+      ]
     },
     {
       "category": "Science",
@@ -292,8 +314,7 @@
           "option": "N2",
           "is_correct": false
         }
-      ],
-      "id": 12
+      ]
     },
     {
       "category": "History",
@@ -316,8 +337,7 @@
           "option": "James Madison",
           "is_correct": false
         }
-      ],
-      "id": 13
+      ]
     },
     {
       "category": "Geography",
@@ -340,8 +360,7 @@
           "option": "Nigeria",
           "is_correct": false
         }
-      ],
-      "id": 14
+      ]
     },
     {
       "category": "Sports",
@@ -364,8 +383,7 @@
           "option": "Golf",
           "is_correct": false
         }
-      ],
-      "id": 15
+      ]
     },
     {
       "category": "Technology",
@@ -388,8 +406,7 @@
           "option": "Home Tool and Mold Laboratory",
           "is_correct": false
         }
-      ],
-      "id": 16
+      ]
     },
     {
       "category": "Movies",
@@ -412,8 +429,7 @@
           "option": "Martin Scorsese",
           "is_correct": false
         }
-      ],
-      "id": 17
+      ]
     },
     {
       "category": "Music",
@@ -436,8 +452,7 @@
           "option": "Queen",
           "is_correct": false
         }
-      ],
-      "id": 18
+      ]
     },
     {
       "category": "Politics",
@@ -460,8 +475,7 @@
           "option": "Jean Chrétien",
           "is_correct": false
         }
-      ],
-      "id": 19
+      ]
     },
     {
       "category": "Science",
@@ -484,19 +498,7 @@
           "option": "360 degrees",
           "is_correct": false
         }
-      ],
-      "id": 20
+      ]
     }
-  ],
-  "selectedQuestions": [],
-  "currentQuestion": {},
-  "results": {
-    "correct": 0,
-    "incorrect": 0,
-    "timeTaken": 0,
-    "timeUp": false
-  },
-  "counter": {
-    "time": 0
-  }
+  ]
 }

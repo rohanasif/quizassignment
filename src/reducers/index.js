@@ -46,9 +46,11 @@ const questionReducer = (state = initialState, action) => {
       return {
         ...state,
         questions: state.selectedQuestions.map((question) =>
-          question.correctChoice === action.payload
-            ? { ...question, correct: true }
-            : { ...question, correct: false }
+          question.answers.map((answer) =>
+            answer.option === action.payload && answer.is_correct
+              ? answer.push({ marks: 1 })
+              : answer.push({ marks: 0 })
+          )
         ),
       };
     case TIME_UP:

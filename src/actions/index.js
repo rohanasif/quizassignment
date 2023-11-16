@@ -1,4 +1,9 @@
-import { SELECT_QUESTIONS, SELECT_OPTIONS, BASE_URL } from "../constants";
+import {
+  SELECT_QUESTIONS,
+  SELECT_OPTIONS,
+  BASE_URL,
+  GET_QUESTION,
+} from "../constants";
 import axios from "axios";
 
 export const selectOptions = (selectedOptions) => async (dispatch) => {
@@ -29,6 +34,21 @@ export const selectQuestions = (selectedOptions) => async (dispatch) => {
       questionsToShow.push(filteredQuestions[randomIndex]);
     }
     dispatch({ type: SELECT_QUESTIONS, payload: questionsToShow });
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+export const getQuestion = (selectedQuestions) => async (dispatch) => {
+  try {
+    let randomIndex = Math.floor(Math.random() * selectedQuestions.length);
+    let newArray = [...selectedQuestions];
+    const chosenQuestion = newArray.slice(randomIndex, randomIndex + 1)[0];
+    const response = await axios.post(
+      `${BASE_URL}/currentQuestion`,
+      chosenQuestion
+    );
+    dispatch({ type: GET_QUESTION, payload: response.data });
   } catch (e) {
     console.error(e);
   }
