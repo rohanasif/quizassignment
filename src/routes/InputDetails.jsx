@@ -66,16 +66,26 @@ const InputDetails = () => {
             value={category}
           >
             <option value="Any Category">Any Category</option>
+            <option value="Entertainment: Film">Entertainment: Film</option>
+            <option value="Entertainment: Video Games">
+              Entertainment: Video Games
+            </option>
             <option value="General Knowledge">General Knowledge</option>
-            <option value="Science">Science</option>
-            <option value="History">History</option>
             <option value="Geography">Geography</option>
-            <option value="Sports">Sports</option>
-            <option value="Technology">Technology</option>
-            <option value="Movies">Movies</option>
-            <option value="Music">Music</option>
+            <option value="Entertainment: Japanese Anime & Manga">
+              Entertainment: Japanese Anime & Manga
+            </option>
+            <option value="Entertainment: Books">Entertainment: Books</option>
+            <option value="Mythology">Mythology</option>
+            <option value="Animals">Animals</option>
             <option value="History">History</option>
-            <option value="Politics">Politics</option>
+            <option value="Science: Computers">Science: Computers</option>
+            <option value="Entertainment: Music">Entertainment: Music</option>
+            <option value="Entertainment: Comics">Entertainment: Comics</option>
+            <option value="Science & Nature">Science & Nature</option>
+            <option value="Entertainment: Television">
+              Entertainment: Television
+            </option>
           </Form.Select>
         </Form.Group>
         <Form.Group>

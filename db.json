@@ -1,10 +1,10 @@
 {
   "options": {
     "name": "r",
-    "category": "Any Category",
-    "questionCount": "6",
-    "difficulty": "Any Difficulty",
-    "type": "",
+    "category": "Geography",
+    "questionCount": "10",
+    "difficulty": "Hard",
+    "type": "Multiple Choice",
     "timePerQuestion": 10
   },
   "selectedQuestions": [],
@@ -26,7 +26,11 @@
         "category": "Entertainment: Film",
         "question": "In the 1994 movie &quot;Speed&quot;, what is the minimum speed the bus must go to prevent to bomb from exploding?",
         "correct_answer": "50 mph",
-        "incorrect_answers": ["60 mph", "40 mph", "70 mph"]
+        "incorrect_answers": [
+          "60 mph",
+          "40 mph",
+          "70 mph"
+        ]
       },
       {
         "type": "multiple",
@@ -46,7 +50,11 @@
         "category": "Entertainment: Film",
         "question": "Which Marvel superhero did Chris Evans play prior to his role as Captain America?",
         "correct_answer": "Human Torch",
-        "incorrect_answers": ["Cyclops", "Iceman", "Daredevil"]
+        "incorrect_answers": [
+          "Cyclops",
+          "Iceman",
+          "Daredevil"
+        ]
       },
       {
         "type": "multiple",
@@ -66,7 +74,11 @@
         "category": "General Knowledge",
         "question": "Scotch whisky and Drambuie make up which cocktail?",
         "correct_answer": "Rusty Nail",
-        "incorrect_answers": ["Screwdriver", "Sex on the Beach", "Manhattan"]
+        "incorrect_answers": [
+          "Screwdriver",
+          "Sex on the Beach",
+          "Manhattan"
+        ]
       },
       {
         "type": "multiple",
@@ -74,7 +86,11 @@
         "category": "Geography",
         "question": "What is the capital of South Korea?",
         "correct_answer": "Seoul",
-        "incorrect_answers": ["Pyongyang", "Taegu", "Kitakyushu"]
+        "incorrect_answers": [
+          "Pyongyang",
+          "Taegu",
+          "Kitakyushu"
+        ]
       },
       {
         "type": "boolean",
@@ -82,7 +98,9 @@
         "category": "Entertainment: Film",
         "question": "In Alfred Hitchcock&#039;s film &#039;Psycho&#039; it is said he used chocolate syrup to simulate the blood in the famous shower scene from ",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "boolean",
@@ -90,7 +108,9 @@
         "category": "Entertainment: Japanese Anime &amp; Manga",
         "question": "Gosho Aoyama Made This Series: (Detective Conan / Case Closed!)",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "multiple",
@@ -98,7 +118,11 @@
         "category": "Geography",
         "question": "What is the capital of Scotland?",
         "correct_answer": "Edinburgh",
-        "incorrect_answers": ["Glasgow", "Dundee", "London"]
+        "incorrect_answers": [
+          "Glasgow",
+          "Dundee",
+          "London"
+        ]
       },
       {
         "type": "boolean",
@@ -106,7 +130,9 @@
         "category": "Entertainment: Video Games",
         "question": "In the video game &quot;Transistor&quot;, &quot;Red&quot; is the name of the main character.",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "multiple",
@@ -114,7 +140,11 @@
         "category": "Entertainment: Film",
         "question": "Which musical artist had a prominent role in the 2017 film &quot;Kingsman: The Golden Circle&quot;?",
         "correct_answer": "Elton John",
-        "incorrect_answers": ["Lady Gaga", "Rihanna", "Justin Bieber"]
+        "incorrect_answers": [
+          "Lady Gaga",
+          "Rihanna",
+          "Justin Bieber"
+        ]
       },
       {
         "type": "multiple",
@@ -146,7 +176,11 @@
         "category": "Mythology",
         "question": "The Nike apparel and footwear brand takes it&#039;s name from the Greek goddess of what?",
         "correct_answer": "Victory",
-        "incorrect_answers": ["Courage", "Strength", "Honor"]
+        "incorrect_answers": [
+          "Courage",
+          "Strength",
+          "Honor"
+        ]
       },
       {
         "type": "multiple",
@@ -166,7 +200,9 @@
         "category": "General Knowledge",
         "question": "It is automatically considered entrapment in the United States if the police sell you illegal substances without revealing themselves.",
         "correct_answer": "False",
-        "incorrect_answers": ["True"]
+        "incorrect_answers": [
+          "True"
+        ]
       },
       {
         "type": "boolean",
@@ -174,7 +210,9 @@
         "category": "Entertainment: Film",
         "question": "&quot;Foodfight!&quot; earned less than $80,000 at box office.",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "multiple",
@@ -194,7 +232,11 @@
         "category": "Entertainment: Japanese Anime &amp; Manga",
         "question": "What year did &quot;Attack on Titan&quot; first air?",
         "correct_answer": "2013",
-        "incorrect_answers": ["2014", "2012", "2015"]
+        "incorrect_answers": [
+          "2014",
+          "2012",
+          "2015"
+        ]
       },
       {
         "type": "multiple",
@@ -202,7 +244,11 @@
         "category": "Entertainment: Video Games",
         "question": "Which of these Generation 1 Pokemon did NOT have an evolution in Generation 4?",
         "correct_answer": "Jynx",
-        "incorrect_answers": ["Electabuzz", "Magmar", "Rhydon"]
+        "incorrect_answers": [
+          "Electabuzz",
+          "Magmar",
+          "Rhydon"
+        ]
       },
       {
         "type": "multiple",
@@ -234,7 +280,11 @@
         "category": "Animals",
         "question": "What type of creature is a Bonobo?",
         "correct_answer": "Ape",
-        "incorrect_answers": ["Lion", "Parrot", "Wildcat"]
+        "incorrect_answers": [
+          "Lion",
+          "Parrot",
+          "Wildcat"
+        ]
       },
       {
         "type": "boolean",
@@ -242,7 +292,9 @@
         "category": "History",
         "question": "The Kingdom of Prussia briefly held land in Estonia.",
         "correct_answer": "False",
-        "incorrect_answers": ["True"]
+        "incorrect_answers": [
+          "True"
+        ]
       },
       {
         "type": "boolean",
@@ -250,7 +302,9 @@
         "category": "Entertainment: Music",
         "question": "Nick Mason is the only member to appear on every Pink Floyd album.",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "multiple",
@@ -258,7 +312,11 @@
         "category": "Entertainment: Film",
         "question": "In what year was the first Transformers movie released?",
         "correct_answer": "1986",
-        "incorrect_answers": ["2007", "1984", "2009"]
+        "incorrect_answers": [
+          "2007",
+          "1984",
+          "2009"
+        ]
       },
       {
         "type": "multiple",
@@ -266,7 +324,11 @@
         "category": "Entertainment: Video Games",
         "question": "In which year did the first Monster Hunter game get released?",
         "correct_answer": "2004",
-        "incorrect_answers": ["2006", "2005", "2002"]
+        "incorrect_answers": [
+          "2006",
+          "2005",
+          "2002"
+        ]
       },
       {
         "type": "multiple",
@@ -334,7 +396,11 @@
         "category": "Science: Computers",
         "question": ".at is the top-level domain for what country?",
         "correct_answer": "Austria",
-        "incorrect_answers": ["Argentina", "Australia", "Angola"]
+        "incorrect_answers": [
+          "Argentina",
+          "Australia",
+          "Angola"
+        ]
       },
       {
         "type": "multiple",
@@ -342,7 +408,11 @@
         "category": "Entertainment: Television",
         "question": "In DuckTales, what is the name of the city where all the main characters live?",
         "correct_answer": "Duckburg",
-        "incorrect_answers": ["Duckwing", "Tailspin", "Wingford"]
+        "incorrect_answers": [
+          "Duckwing",
+          "Tailspin",
+          "Wingford"
+        ]
       },
       {
         "type": "multiple",
@@ -362,7 +432,11 @@
         "category": "Geography",
         "question": "Which of these countries is NOT located in Africa?",
         "correct_answer": "Suriname",
-        "incorrect_answers": ["Burkina Faso", "Mozambique", "Algeria"]
+        "incorrect_answers": [
+          "Burkina Faso",
+          "Mozambique",
+          "Algeria"
+        ]
       },
       {
         "type": "multiple",
@@ -382,7 +456,11 @@
         "category": "Geography",
         "question": "Which of these is NOT a city in Saudi Arabia?",
         "correct_answer": "Dubai",
-        "incorrect_answers": ["Riyadh", "Mecca", "Medina"]
+        "incorrect_answers": [
+          "Riyadh",
+          "Mecca",
+          "Medina"
+        ]
       },
       {
         "type": "multiple",
@@ -390,7 +468,11 @@
         "category": "Science &amp; Nature",
         "question": "Which of the following blood vessels carries deoxygenated blood?",
         "correct_answer": "Pulmonary Artery",
-        "incorrect_answers": ["Pulmonary Vein", "Aorta", "Coronary Artery"]
+        "incorrect_answers": [
+          "Pulmonary Vein",
+          "Aorta",
+          "Coronary Artery"
+        ]
       },
       {
         "type": "boolean",
@@ -398,7 +480,9 @@
         "category": "Science &amp; Nature",
         "question": "An exothermic reaction is a chemical reaction that releases energy by radiating electricity.",
         "correct_answer": "False",
-        "incorrect_answers": ["True"]
+        "incorrect_answers": [
+          "True"
+        ]
       },
       {
         "type": "boolean",
@@ -406,7 +490,9 @@
         "category": "Entertainment: Film",
         "question": "George Lucas directed the entire original Star Wars trilogy.",
         "correct_answer": "False",
-        "incorrect_answers": ["True"]
+        "incorrect_answers": [
+          "True"
+        ]
       },
       {
         "type": "multiple",
@@ -414,7 +500,11 @@
         "category": "Entertainment: Video Games",
         "question": "In the MMO RPG &quot;Realm of the Mad God&quot;, what class is known for having the highest possible defense?",
         "correct_answer": "The Knight",
-        "incorrect_answers": ["The Wizard", "The Archer", "The Warrior"]
+        "incorrect_answers": [
+          "The Wizard",
+          "The Archer",
+          "The Warrior"
+        ]
       },
       {
         "type": "multiple",
@@ -422,7 +512,11 @@
         "category": "History",
         "question": "When did Jamaica recieve its independence from England? ",
         "correct_answer": "1962",
-        "incorrect_answers": ["1492", "1963", "1987"]
+        "incorrect_answers": [
+          "1492",
+          "1963",
+          "1987"
+        ]
       },
       {
         "type": "multiple",
@@ -430,7 +524,11 @@
         "category": "Geography",
         "question": "On a London Underground map, what colour is the Circle Line?",
         "correct_answer": "Yellow",
-        "incorrect_answers": ["Red", "Blue", "Green"]
+        "incorrect_answers": [
+          "Red",
+          "Blue",
+          "Green"
+        ]
       },
       {
         "type": "multiple",
@@ -438,7 +536,11 @@
         "category": "Entertainment: Television",
         "question": "What breed of dog is &quot;Scooby Doo&quot;?",
         "correct_answer": "Great Dane",
-        "incorrect_answers": ["Pit bull", "Boxer", "Doberman Pinscher"]
+        "incorrect_answers": [
+          "Pit bull",
+          "Boxer",
+          "Doberman Pinscher"
+        ]
       },
       {
         "type": "multiple",
@@ -470,7 +572,9 @@
         "category": "Mythology",
         "question": "Janus was the Roman god of doorways and passageways.",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "boolean",
@@ -478,7 +582,9 @@
         "category": "Science &amp; Nature",
         "question": "Scientists accidentally killed the once known world&#039;s oldest living creature, a mollusc, known to be aged as 507 years old.",
         "correct_answer": "True",
-        "incorrect_answers": ["False"]
+        "incorrect_answers": [
+          "False"
+        ]
       },
       {
         "type": "multiple",
@@ -486,7 +592,11 @@
         "category": "Entertainment: Video Games",
         "question": "In &quot;Pok&eacute;mon Sun and Moon&quot;, Team Skull took over which town?",
         "correct_answer": "Po Town",
-        "incorrect_answers": ["Heahea City", "Tapu Village", "Iki Town"]
+        "incorrect_answers": [
+          "Heahea City",
+          "Tapu Village",
+          "Iki Town"
+        ]
       }
     ]
   ]
