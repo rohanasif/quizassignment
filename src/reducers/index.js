@@ -20,11 +20,11 @@ const initialState = {
     type: "",
     timePerQuestion: 0,
   },
-  questions: [],
   selectedQuestions: [],
   currentQuestion: {},
   results: { correct: 0, incorrect: 0, timeTaken: 0, timeUp: false },
   counter: { time: 0 },
+  questions: [],
 };
 
 const optionsReducer = (state = initialState, action) => {
@@ -45,12 +45,10 @@ const questionReducer = (state = initialState, action) => {
     case CHECK_QUESTIONS:
       return {
         ...state,
-        questions: state.selectedQuestions.map((question) =>
-          question.answers.map((answer) =>
-            answer.option === action.payload && answer.is_correct
-              ? answer.push({ marks: 1 })
-              : answer.push({ marks: 0 })
-          )
+        selectedQuestions: state.selectedQuestions.map((question) =>
+          action.payload === question.correct_answer
+            ? question.push({ marks: 1 })
+            : question.push({ marks: 0 })
         ),
       };
     case TIME_UP:
@@ -62,7 +60,7 @@ const questionReducer = (state = initialState, action) => {
     case SET_QUESTION_TIME:
       return {
         ...state,
-        questions: state.selectedQuestions.map((question) => ({
+        selectedQuestions: state.selectedQuestions.map((question) => ({
           ...question,
           timeTaken: action.payload,
         })),
