@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const InputDetails = () => {
   const [name, setName] = useState("");
   const [category, setCategory] = useState("Any Category");
-  const [questionCount, setQuestionCount] = useState(0);
+  const [questionCount, setQuestionCount] = useState(1);
   const [difficulty, setDifficulty] = useState("Any Difficulty");
   const [type, setType] = useState("Any Type");
   const [hours, setHours] = useState(0);
@@ -132,7 +132,7 @@ const InputDetails = () => {
           >
             <option value="Any Type">Any Type</option>
             <option value="Multiple Choice">Multiple Choice</option>
-            <option value="True/False">True/False</option>
+            <option value="boolean">True/False</option>
           </Form.Select>
         </Form.Group>
         <Form.Group>

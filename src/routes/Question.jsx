@@ -14,7 +14,7 @@ const Question = () => {
   );
 
   useEffect(() => {
-    if (selectedQuestions.length > 0 && !currentQuestion.question) {
+    if (selectedQuestions.length > 0 && currentQuestion.question) {
       dispatch(getQuestion(selectedQuestions));
     }
   }, [dispatch, selectedQuestions, currentQuestion]);

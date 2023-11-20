@@ -20,6 +20,7 @@ export const selectQuestions = (selectedOptions) => async (dispatch) => {
     const response = await axios.get(`${BASE_URL}/questions`);
     const allQuestions = response.data;
     const { category, questionCount, difficulty, type } = selectedOptions;
+    const questionQuantity = Number(questionCount);
     let filteredQuestions = [];
     if (
       category === "Any Category" &&
@@ -36,7 +37,7 @@ export const selectQuestions = (selectedOptions) => async (dispatch) => {
       );
     }
     let questionsToShow = [];
-    for (let i = 0; i < questionCount; i++) {
+    for (let i = 0; i < questionQuantity; i++) {
       let randomIndex = Math.floor(Math.random() * filteredQuestions.length);
       questionsToShow.push(filteredQuestions[randomIndex]);
     }
