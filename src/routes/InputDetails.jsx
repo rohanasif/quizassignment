@@ -118,9 +118,9 @@ const InputDetails = () => {
             value={difficulty}
           >
             <option value="Any Difficulty">Any Difficulty</option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
           </Form.Select>
         </Form.Group>
         <Form.Group>
@@ -131,7 +131,7 @@ const InputDetails = () => {
             value={type}
           >
             <option value="Any Type">Any Type</option>
-            <option value="Multiple Choice">Multiple Choice</option>
+            <option value="multiple">Multiple Choice</option>
             <option value="boolean">True/False</option>
           </Form.Select>
         </Form.Group>
