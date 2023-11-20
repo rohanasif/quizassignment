@@ -3,6 +3,9 @@ import {
   SELECT_OPTIONS,
   BASE_URL,
   GET_QUESTION,
+  categories,
+  types,
+  difficulty,
 } from "../constants";
 import axios from "axios";
 
@@ -21,26 +24,29 @@ export const selectQuestions = (selectedOptions) => async (dispatch) => {
     const allQuestions = response.data;
     const { category, questionCount, difficulty, type } = selectedOptions;
     const questionQuantity = Number(questionCount);
-    let filteredQuestions = [];
-    if (
-      category === "Any Category" &&
-      difficulty === "Any Difficulty" &&
-      type === "Any Type"
-    ) {
-      filteredQuestions = allQuestions;
-    } else {
-      filteredQuestions = allQuestions.filter(
-        (q) =>
-          q.category === category &&
-          q.difficulty === difficulty &&
-          q.type === type
+
+    let filteredQuestions = allQuestions.filter((question) => {
+      return (
+        (category === "Any Category" || question.category === category) &&
+        (difficulty === "Any Difficulty" ||
+          question.difficulty === difficulty) &&
+        (type === "Any Type" || question.type === type)
       );
-    }
+    });
+
     let questionsToShow = [];
+
     for (let i = 0; i < questionQuantity; i++) {
-      let randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-      questionsToShow.push(filteredQuestions[randomIndex]);
+      if (filteredQuestions.length > 0) {
+        let randomIndex = Math.floor(Math.random() * filteredQuestions.length);
+        questionsToShow.push(filteredQuestions[randomIndex]);
+        filteredQuestions.splice(randomIndex, 1);
+      } else {
+        console.log("No matching questions found");
+        break;
+      }
     }
+
     dispatch({ type: SELECT_QUESTIONS, payload: questionsToShow });
   } catch (e) {
     console.error(e);
