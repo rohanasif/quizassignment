@@ -21,7 +21,11 @@ export const selectQuestions = (selectedOptions) => async (dispatch) => {
     const allQuestions = response.data;
     const { category, questionCount, difficulty, type } = selectedOptions;
     let filteredQuestions = [];
-    if (category === "Any Category" && difficulty === "Any Difficulty") {
+    if (
+      category === "Any Category" &&
+      difficulty === "Any Difficulty" &&
+      type === "Any Type"
+    ) {
       filteredQuestions = allQuestions;
     } else {
       filteredQuestions = allQuestions.filter(
